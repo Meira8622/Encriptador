@@ -1,0 +1,156 @@
+
+body {
+    background: #F3F5FC;
+}
+
+header {
+    margin-right: 20em;
+}
+
+header img {
+    width: 7.5em;
+    height: auto;
+    margin: 2.5em 2.5em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.primary-block {
+    /* display: inline-block; */
+    width: 75%;
+}
+
+.primary-block img {
+    width: 12%;
+    height: auto;
+    margin: 1% 0 2.5% 3%;
+}
+
+.container-1 { /* donde estan los botones y la caja de texto */
+    /* height: 70%; */
+    margin: 0 0 0 20%;
+}
+
+.text-input {
+    border: none;
+    outline: none;
+    background: #F3F5FC;
+    color: #0A3871;
+    font-size: 2em;
+    width: 83.5%;
+    height: 23vw;
+    resize: none;
+    margin: 0 0 2.5% 0;
+}
+
+.text-input::placeholder {
+    color: #0A3871;
+}
+
+main p {
+    color: #495057;
+    margin: 0 0 1.5% 0;
+}
+
+.primary-block button {
+    width: 40%;
+    height: 3.5vw;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+.encriptar {
+    border: none;
+    background: #0A3871;
+    color: #F3F5FC;
+    margin: 0 4% 0 0;
+}
+
+.desencriptar {
+    background: #D8DFE8;
+    border-color: #0A3871;
+    color: #0A3871;
+    border-style: solid;
+}
+
+.desencriptar:active {
+    border-style: solid;
+}
+
+.secondary-block {
+    background: white;
+    width: 20vw;
+    height: 41.8vw;
+    border-radius: 2em;
+    /* display: inline-block; */
+    margin: 2vw 4vw 2vw 0;
+    width: 25%;
+    text-align: center;
+}
+
+.secondary-block img {
+    height: 45%;
+    width: auto;
+    margin-top: 25%;
+}
+
+.msg-container {
+    margin-top: 10%;
+    margin-left: 13%;
+    width: 75%;
+}
+
+.msg1, .msg2 {
+    text-align: center;
+}
+
+.msg1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #343A40;
+    margin: 4% 0;
+}
+
+.msg2 {
+    font-size: 16px;
+    color: #495057;
+}
+
+.text-output {
+    text-align: left;
+    margin: 7%;   
+    overflow-wrap: break-word;
+    height: 76.1%;
+    width: 100%;
+    overflow: auto;
+    display: none;
+    color: #495057;
+    font-size: 1em;
+}
+
+.copiar {
+    width: 87%;
+    height: 8.8%;
+    display: none;
+    margin: 1.5% 0 0 0;
+    border-radius: 1em;
+    border-color: #0A3871;
+    color: #0A3871;
+    border-style: solid;
+    background: white;
+}
+
+footer {
+    height: 3em;
+    background: #0A3871;
+    color: #F3F5FC;
+    text-align: center;
+    line-height: 3em;
+}
+
+@media screen and (max-width:768px) {
+    
+}
