@@ -1,2 +1,1 @@
 # Encriptador
-# Encriptador

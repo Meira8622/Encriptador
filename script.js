@@ -5,12 +5,18 @@ let desencriptar = document.querySelector(".desencriptar");
 
 let textarea = document.querySelector(".text-input");
 
+let copiar = document.querySelector(".copiar");
+
 encriptar.addEventListener("click", function() { 
     encrypt();
 });
 
 desencriptar.addEventListener("click", function() {
     deencrypt();
+});
+
+copiar.addEventListener("click", function() {
+    copyContent();
 });
 
 function encrypt() {
@@ -141,4 +147,10 @@ function deencrypt() {
     console.log("deecrypt");
     console.log(contenido);
     console.log(resultado);
+}
+
+function copyContent() {
+    let outputbox = document.querySelector(".text-output").innerText;
+
+    navigator.clipboard.writeText(outputbox);
 }
