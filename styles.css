@@ -166,6 +166,10 @@ footer a:visited {
 }
 
 @media screen and (max-width:768px) {
+
+    body {
+        height: 100%;
+    }
     
     main {
         display: inline;
@@ -182,7 +186,7 @@ footer a:visited {
     }
 
     .text-input {
-        /* height: 100%; */
+        width: 100%;
     }
 
     .primary-block button {
