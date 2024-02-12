@@ -9,10 +9,23 @@ let copiar = document.querySelector(".copiar");
 
 encriptar.addEventListener("click", function() { 
     encrypt();
+
+    let tamañoPantalla = window.innerWidth;
+
+    if(tamañoPantalla<=768 && textarea.value != "") {
+        windowSize();
+    }
 });
 
 desencriptar.addEventListener("click", function() {
     deencrypt();
+
+    let tamañoPantalla = window.innerWidth;
+    
+    if(tamañoPantalla<=768) {
+        console.log("hola");
+        windowSize();
+    }
 });
 
 copiar.addEventListener("click", function() {
@@ -153,4 +166,16 @@ function copyContent() {
     let outputbox = document.querySelector(".text-output").innerText;
 
     navigator.clipboard.writeText(outputbox);
+}
+
+function windowSize() {
+    let main = document.querySelector("main");
+    let secondaryBlock = document.querySelector(".secondary-block");
+    let footer = document.querySelector("footer");
+
+    main.style.height = "100vw+44.661vw";
+    secondaryBlock.style.height = "44.661vw";
+    footer.style.marginTop = "13vw";
+
+    console.log("cambio de altura");
 }
