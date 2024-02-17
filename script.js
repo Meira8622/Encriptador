@@ -22,8 +22,7 @@ desencriptar.addEventListener("click", function() {
 
     let tamañoPantalla = window.innerWidth;
     
-    if(tamañoPantalla<=768) {
-        console.log("hola");
+    if(tamañoPantalla<=768 && textarea.value != "") {
         windowSize();
     }
 });
@@ -175,7 +174,7 @@ function windowSize() {
 
     main.style.height = "100vw+44.661vw";
     secondaryBlock.style.height = "44.661vw";
-    footer.style.marginTop = "13vw";
+    // footer.style.marginTop = "13vw";
 
     console.log("cambio de altura");
 }
