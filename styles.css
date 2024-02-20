@@ -391,16 +391,16 @@ footer a:visited {
     }
 
     .encriptar {
-        margin: 0 0 6.4vw 0;
+        margin: 0 0 4.4vw 0;
     }
 
     .desencriptar {
-        margin: 0 0 17.067vw 0;
+        margin: 0 0 10.067vw 0;
     }
 
     .secondary-block {
         width: 87.2vw;
-        height: 49.6vw;
+        height: 55.6vw;
         border-radius: 8.533vw;
         margin: 0 6.4vw;
     }
@@ -409,6 +409,7 @@ footer a:visited {
         width: 70.133vw;
         height: 32.533vw;
         padding: 9vw;
+        padding-top: 13.2vw;
     }
 
     .msg1 {
@@ -423,6 +424,14 @@ footer a:visited {
     }
 
     .text-output {
+        margin: 5vw;
         font-size: 5.647vw;
+    }
+
+    .copiar {
+        font-size: 4.267vw;
+        width: 74.4vw;
+        height: 17.867vw;
+        border-radius: 6.4vw;
     }
 }

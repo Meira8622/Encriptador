@@ -12,7 +12,7 @@ encriptar.addEventListener("click", function() {
 
     let tamañoPantalla = window.innerWidth;
 
-    if(tamañoPantalla<=768 && textarea.value != "") {
+    if(tamañoPantalla<=768 && textarea.value != "" && tamañoPantalla>=435) {
         windowSize();
     }
 });
@@ -22,7 +22,7 @@ desencriptar.addEventListener("click", function() {
 
     let tamañoPantalla = window.innerWidth;
     
-    if(tamañoPantalla<=768 && textarea.value != "") {
+    if(tamañoPantalla<=768 && textarea.value != "" && tamañoPantalla>=435) {
         windowSize();
     }
 });
@@ -170,11 +170,17 @@ function copyContent() {
 function windowSize() {
     let main = document.querySelector("main");
     let secondaryBlock = document.querySelector(".secondary-block");
-    let footer = document.querySelector("footer");
+    // let footer = document.querySelector("footer");
 
     main.style.height = "100vw+44.661vw";
     secondaryBlock.style.height = "44.661vw";
     // footer.style.marginTop = "13vw";
+
+    // let tamañoPantalla = window.innerWidth;
+
+    // if(tamañoPantalla<=435 && textarea.value != "") {
+    //     secondaryBlock.style.height = "55.661vw";
+    // }
 
     console.log("cambio de altura");
 }
